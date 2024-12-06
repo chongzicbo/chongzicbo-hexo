@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-Hans">
+<head>
+    <%- partial('_partial/head') %>
+</head>
+<body>
+<%- partial('_partial/leftMenu') %>
+<%- partial('_widget/user-entry') %>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <%- partial('_partial/middleCover') %>
+            <%- body %>
+        </div>
+    </div>
+    <%- partial('_partial/footer') %>
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="true"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="<%= __('search_placeholder') %>"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script async src="/js/SimpleCore.min.js"></script>
+<%- partial('_widget/third-scripts', null, { cache: false }) %>
+</body>
+</html>

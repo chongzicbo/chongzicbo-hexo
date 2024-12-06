@@ -1,0 +1,35 @@
+<% var external_link = config.external_link ? '_blank' : '_self'; %>
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <% if (post.photos && post.photos.length){ %>
+        <!-- render the first if pics exists. -->
+        <div class="post-cover">
+            <img loading="lazy" src="<%= post.photos[0] %>" alt="<%= post.title %>-<%= theme.site_name %>" itemprop="image" />
+        </div>
+    <% } %>
+    <div class="post-header">
+        <div class="post-meta">
+            <a href="<%= theme.authorInfo.home %>" rel="author" itemprop="author">
+                <strong><span itemprop="name"><%= post.author ? post.author : theme.authorInfo.name %></span></strong>
+            </a>
+            <em>·</em><span itemprop="datePublished" content="<%= full_date(post.date, 'yyyy-MM-DDTHH:mm:ss.SSSZ')%>"><%= date(post.date) %></span>
+            <% if (is_home() && post.sticky > 0){ %>
+                <span class="label" style="color:#e78170"><%= __('sticky') %></span>
+            <% } %>
+        </div>
+        <h3>
+            <a class="post-title-item" rel="noopener" href="<%- url_for(post.path) %>" target="<%= external_link %>" title="<%= post.title %>"><span itemprop="headline"><%= post.title %></span></a>
+        </h3>
+        <div class="post-meta">
+            <a href="/tags" target="<%= external_link %>" rel="noopener" aria-label="content tag link"><i class="fa fa-tags"></i></a>
+            <% post.tags.each((tag)=>{ %>
+                <em>·</em>
+                <a href="<%= tag.permalink %>" target="<%= external_link %>" rel="noopener"><span itemprop="articleSection"><%= tag.name %></span></a>
+            <% }) %>
+        </div>
+    </div>
+    <div class="post-desc" itemprop="about">
+        <%= post.description || post.title %>
+    </div>
+</article>
+
+

@@ -1,0 +1,40 @@
+home: Home
+archives: Archives
+about: About
+app: App
+map: SiteMap
+categories: Categories
+search: Search
+search_tip: Press Shift to Search
+search_placeholder: Input query keywords here...
+tags: Tags
+tagcloud: Tag Cloud
+prev: Prev
+next: Next
+comment: Comments
+page: Page %d
+recent_posts: Latest
+newer: Newer
+older: Older
+share: Share
+category: Category
+tag: Tag
+connect: 'Connect With Us'
+post_total_count: Nice 🥳 %d posts in total. Keep on posting.
+tag_total_count: There are %d tags so far.
+read_more: Continue Reading →
+contents: Contents
+none: None
+donate: Buymeacoffee
+buildTip: Has been established
+day: Days
+based_on: Based on
+theme_by: Theme by
+author: Author
+hosted: Hosted
+last_edited: Last edited at
+post_words_count: emm... %d words in the article
+post_view_count_prefix: you are the
+post_view_count_subfix: th visited person
+post_declare: Warning
+sticky: Stickied
