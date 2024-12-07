@@ -1,3 +1,15 @@
+---
+title: 'YOLO V10 详解'
+date: 2024-12-7 18:30:00
+categories:
+  - computer-vision
+tags:
+  - yolo
+  - 目标检测
+---
+
+
+
 # 引言
 
 ### 背景介绍
