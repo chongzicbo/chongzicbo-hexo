@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"chongzicbo.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"chongzicbo.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":"3841b375bfdd5627f0f840e1e289416e","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -76,6 +76,19 @@
   <script  src="/js/color-schema.js" ></script>
   
 
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3841b375bfdd5627f0f840e1e289416e";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
   
 
   
@@ -340,7 +353,7 @@
                 
 
 <div class="text-center tagcloud">
-  <a href="/tags/OCR/" style="font-size: 15px; color: #bbe">OCR</a> <a href="/tags/c/" style="font-size: 22.5px; color: #779bd3">c++</a> <a href="/tags/c-%E5%9F%BA%E7%A1%80/" style="font-size: 18.75px; color: #99abe0">c++基础</a> <a href="/tags/cpp/" style="font-size: 22.5px; color: #779bd3">cpp</a> <a href="/tags/huggingface/" style="font-size: 15px; color: #bbe">huggingface</a> <a href="/tags/llama/" style="font-size: 18.75px; color: #99abe0">llama</a> <a href="/tags/llm/" style="font-size: 18.75px; color: #99abe0">llm</a> <a href="/tags/nlp/" style="font-size: 18.75px; color: #99abe0">nlp</a> <a href="/tags/python/" style="font-size: 26.25px; color: #558ac5">python</a> <a href="/tags/transformers/" style="font-size: 15px; color: #bbe">transformers</a> <a href="/tags/yolo/" style="font-size: 22.5px; color: #779bd3">yolo</a> <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 30px; color: #337ab7">人工智能</a> <a href="/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/" style="font-size: 18.75px; color: #99abe0">多模态</a> <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" style="font-size: 22.5px; color: #779bd3">目标检测</a> <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" style="font-size: 15px; color: #bbe">论文阅读</a> <a href="/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/" style="font-size: 18.75px; color: #99abe0">音视频基础</a> <a href="/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91/" style="font-size: 18.75px; color: #99abe0">音视频开发</a>
+  <a href="/tags/OCR/" style="font-size: 15px; color: #bbe">OCR</a> <a href="/tags/c/" style="font-size: 22.5px; color: #779bd3">c++</a> <a href="/tags/c-%E5%9F%BA%E7%A1%80/" style="font-size: 18.75px; color: #99abe0">c++基础</a> <a href="/tags/cpp/" style="font-size: 22.5px; color: #779bd3">cpp</a> <a href="/tags/huggingface/" style="font-size: 15px; color: #bbe">huggingface</a> <a href="/tags/llama/" style="font-size: 18.75px; color: #99abe0">llama</a> <a href="/tags/llm/" style="font-size: 18.75px; color: #99abe0">llm</a> <a href="/tags/nlp/" style="font-size: 18.75px; color: #99abe0">nlp</a> <a href="/tags/python/" style="font-size: 26.25px; color: #558ac5">python</a> <a href="/tags/transformers/" style="font-size: 15px; color: #bbe">transformers</a> <a href="/tags/yolo/" style="font-size: 22.5px; color: #779bd3">yolo</a> <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 30px; color: #337ab7">人工智能</a> <a href="/tags/%E5%A4%9A%E6%A8%A1%E6%80%81/" style="font-size: 18.75px; color: #99abe0">多模态</a> <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" style="font-size: 22.5px; color: #779bd3">目标检测</a> <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" style="font-size: 15px; color: #bbe">论文阅读</a> <a href="/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/" style="font-size: 22.5px; color: #779bd3">音视频基础</a> <a href="/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%BC%80%E5%8F%91/" style="font-size: 22.5px; color: #779bd3">音视频开发</a>
 </div>
 
               </div>
@@ -390,6 +403,32 @@
        <a href="https://github.com/chongzicbo" target="_blank" rel="nofollow noopener"><span>Github</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
   
   
 </div>
@@ -442,6 +481,8 @@
 
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

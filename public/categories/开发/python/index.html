@@ -65,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"chongzicbo.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"chongzicbo.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":"3841b375bfdd5627f0f840e1e289416e","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -76,6 +76,19 @@
   <script  src="/js/color-schema.js" ></script>
   
 
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3841b375bfdd5627f0f840e1e289416e";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
   
 
   
@@ -344,27 +357,27 @@
       
       <p class="h5">2024</p>
     
-    <a href="/2024/12/26/%E5%BC%80%E5%8F%91/Python/Python-001%EF%BC%9A%E4%BD%BF%E7%94%A8xml.dom.minidom%E8%A7%A3%E6%9E%90xml%E6%96%87%E4%BB%B6/" class="list-group-item list-group-item-action">
-      <time>12-26</time>
-      <div class="list-group-item-title">深入解析 `xml.dom.minidom`：从入门到精通</div>
+    <a href="/2024/12/21/%E5%BC%80%E5%8F%91/Python/Python-004%EF%BC%9APython%20%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BD%BF%E7%94%A8loguru%E6%A8%A1%E5%9D%97%E6%9E%84%E5%BB%BA%E9%AB%98%E6%95%88%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/" class="list-group-item list-group-item-action">
+      <time>12-21</time>
+      <div class="list-group-item-title">Python 日志处理最佳实践：使用loguru模块构建高效日志系统</div>
     </a>
   
     
-    <a href="/2024/12/26/%E5%BC%80%E5%8F%91/Python/Python-002%EF%BC%9Apython%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" class="list-group-item list-group-item-action">
-      <time>12-26</time>
-      <div class="list-group-item-title">Python开发中常用工具函数</div>
-    </a>
-  
-    
-    <a href="/2024/12/26/%E5%BC%80%E5%8F%91/Python/Python-003%EF%BC%9APython%20%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BD%BF%E7%94%A8logging%E6%A8%A1%E5%9D%97%E6%9E%84%E5%BB%BA%E9%AB%98%E6%95%88%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/" class="list-group-item list-group-item-action">
-      <time>12-26</time>
+    <a href="/2024/12/15/%E5%BC%80%E5%8F%91/Python/Python-003%EF%BC%9APython%20%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BD%BF%E7%94%A8logging%E6%A8%A1%E5%9D%97%E6%9E%84%E5%BB%BA%E9%AB%98%E6%95%88%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/" class="list-group-item list-group-item-action">
+      <time>12-15</time>
       <div class="list-group-item-title">Python 日志处理最佳实践：使用logging模块构建高效日志系统</div>
     </a>
   
     
-    <a href="/2024/12/26/%E5%BC%80%E5%8F%91/Python/Python-004%EF%BC%9APython%20%E6%97%A5%E5%BF%97%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BD%BF%E7%94%A8loguru%E6%A8%A1%E5%9D%97%E6%9E%84%E5%BB%BA%E9%AB%98%E6%95%88%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/" class="list-group-item list-group-item-action">
-      <time>12-26</time>
-      <div class="list-group-item-title">Python 日志处理最佳实践：使用loguru模块构建高效日志系统</div>
+    <a href="/2024/12/14/%E5%BC%80%E5%8F%91/Python/Python-002%EF%BC%9Apython%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" class="list-group-item list-group-item-action">
+      <time>12-14</time>
+      <div class="list-group-item-title">Python开发中常用工具函数</div>
+    </a>
+  
+    
+    <a href="/2024/12/13/%E5%BC%80%E5%8F%91/Python/Python-001%EF%BC%9A%E4%BD%BF%E7%94%A8xml.dom.minidom%E8%A7%A3%E6%9E%90xml%E6%96%87%E4%BB%B6/" class="list-group-item list-group-item-action">
+      <time>12-13</time>
+      <div class="list-group-item-title">深入解析 `xml.dom.minidom`：从入门到精通</div>
     </a>
   
 </div>
@@ -421,6 +434,32 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
   
 </div>
 
@@ -472,6 +511,8 @@
 
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
